@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,6 +44,8 @@ body{font-family:'Inter',sans-serif;background:#fff;color:var(--ink);overflow-x:
 .edot{width:7px;height:7px;border-radius:50%;background:#2563eb;animation:blink2 1.4s ease-in-out infinite;}
 .hero-grid h1{font-size:52px;font-weight:900;line-height:1;color:#0f172a;animation:heroIn .65s .08s ease both;}
 .hero-grid h1 em{font-style:normal;color:#2563eb;display:block;}
+.hero-grid h1{font-size:52px;font-weight:900;line-height:1;color:#0f172a;animation:heroIn .65s .08s ease both;}
+.engineer-tag{font-size:16px;font-weight:600;color:#2563eb;margin-top:6px;margin-bottom:0;letter-spacing:.01em;animation:heroIn .65s .12s ease both;}
 .hero-sub{font-size:14px;color:#64748b;margin-top:12px;line-height:1.65;max-width:430px;animation:heroIn .65s .16s ease both;}
 .hero-pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px;animation:heroIn .65s .22s ease both;}
 .hpill{font-size:11px;padding:4px 12px;border-radius:99px;border:1px solid #e2e8f0;color:#475569;background:#f8fafc;transition:all .2s;cursor:default;}
@@ -129,11 +132,11 @@ body{font-family:'Inter',sans-serif;background:#fff;color:var(--ink);overflow-x:
 /* ── ACHIEVEMENTS ── */
 .ach-bg{background:#2563eb;padding:72px 0;position:relative;overflow:hidden;}
 .ach-bg::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.07) 1px,transparent 1px);background-size:26px 26px;}
-.ach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:16px;position:relative;z-index:1;}
-.ach-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:24px;text-align:center;transition:all .3s;cursor:default;}
+.ach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;position:relative;z-index:1;}
+.ach-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:28px 20px;text-align:center;transition:all .3s;cursor:default;}
 .ach-card:hover{background:rgba(255,255,255,.18);transform:translateY(-5px);}
-.ach-num{font-size:36px;font-weight:900;color:#fff;line-height:1;}
-.ach-lbl{font-size:11px;color:#bfdbfe;margin-top:6px;line-height:1.4;}
+.ach-num{font-size:32px;font-weight:900;color:#fff;line-height:1;}
+.ach-sub{font-size:13px;font-weight:700;color:#e0eaff;margin-top:4px;}.ach-lbl{font-size:11px;color:#bfdbfe;margin-top:4px;line-height:1.4;}
 
 /* ── SKILLS ── */
 .skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
@@ -202,7 +205,8 @@ body{font-family:'Inter',sans-serif;background:#fff;color:var(--ink);overflow-x:
 <div class="hero-grid">
   <div>
     <div class="eyebrow"><span class="edot"></span>Available for full-time roles</div>
-    <h1>Mansi<em>Bhati</em></h1>
+    <h1>Mansi Bhati</h1>
+    <div class="engineer-tag">An Engineer Turned Marketer</div>
     <p class="hero-sub">Performance Marketer. PPC Expert. Engineer-turned-strategist with 6+ years turning ad spend into revenue — 180+ MQLs in one quarter, Rs.3 Cr+ via paid search.</p>
     <div class="hero-pills">
       <span class="hpill">Google Ads</span><span class="hpill">Meta Ads</span><span class="hpill">LinkedIn Ads</span><span class="hpill">GA4 &amp; GTM</span><span class="hpill">B2B SaaS</span><span class="hpill">US · UK · Canada</span>
@@ -464,15 +468,15 @@ body{font-family:'Inter',sans-serif;background:#fff;color:var(--ink);overflow-x:
 
 <!-- ══ ACHIEVEMENTS ══ -->
 <div class="ach-bg">
-<div class="section" style="padding-top:0;padding-bottom:0;">
+<div class="section" style="padding-top:0;padding-bottom:0;max-width:1100px;margin:0 auto;">
   <div class="sec-eyebrow" style="color:#bfdbfe;">Numbers that matter</div>
   <div class="sec-title" style="color:#fff;margin-bottom:32px;">Results I'm proud of</div>
   <div class="ach-grid">
-    <div class="ach-card"><div class="ach-num" id="a1">0</div><div class="ach-lbl">MQLs delivered in Q4 at E2M · Cost/MQL $388</div></div>
-    <div class="ach-card"><div class="ach-num" id="a2">0</div><div class="ach-lbl">Revenue per quarter via Google Ads at Zoop</div></div>
-    <div class="ach-card"><div class="ach-num" id="a3">0</div><div class="ach-lbl">First clients for ZoopSign via Meta Ads</div></div>
-    <div class="ach-card"><div class="ach-num" id="a4">0</div><div class="ach-lbl">Ad budget managed across all campaigns</div></div>
-    <div class="ach-card"><div class="ach-num" id="a5">0</div><div class="ach-lbl">Clients served nationally and internationally</div></div>
+    <div class="ach-card"><div class="ach-num" id="a1">0</div><div class="ach-sub">MQLs in Q4</div><div class="ach-lbl">Cost/MQL $388 · E2M Solutions</div></div>
+    <div class="ach-card"><div class="ach-num" id="a2">0</div><div class="ach-sub">Revenue/qtr</div><div class="ach-lbl">Google Ads Search · Zoop</div></div>
+    <div class="ach-card"><div class="ach-num" id="a3">0</div><div class="ach-sub">First clients</div><div class="ach-lbl">ZoopSign via Meta Ads</div></div>
+    <div class="ach-card"><div class="ach-num" id="a4">0</div><div class="ach-sub">Ad budget</div><div class="ach-lbl">Managed across campaigns</div></div>
+    <div class="ach-card"><div class="ach-num" id="a5">0</div><div class="ach-sub">Brands served</div><div class="ach-lbl">National & international</div></div>
   </div>
 </div>
 </div>
@@ -564,7 +568,7 @@ body{font-family:'Inter',sans-serif;background:#fff;color:var(--ink);overflow-x:
   const metObs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){count(document.getElementById('m1'),6,'','+ yrs',800);count(document.getElementById('m2'),1500,'','+ campaigns',1300);count(document.getElementById('m3'),3.5,'₹','M+',1000,true);count(document.getElementById('m4'),180,'','+ MQLs',900);count(document.getElementById('m5'),250,'','+ clients',1100);metObs.disconnect();}});},{threshold:.5});
   const mb=document.querySelector('.mbar');if(mb)metObs.observe(mb);
 
-  const achObs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){count(document.getElementById('a1'),180,'','+ MQLs',900);count(document.getElementById('a2'),3,'Rs.','Cr+/qtr',800,true);count(document.getElementById('a3'),100,'','+ clients',700);count(document.getElementById('a4'),3.5,'Rs.','M+',900,true);count(document.getElementById('a5'),250,'','+ brands',1000);achObs.disconnect();}});},{threshold:.4});
+  const achObs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){count(document.getElementById('a1'),180,'','+ MQLs',900);count(document.getElementById('a2'),3,'Rs.','Cr+',800,true);count(document.getElementById('a3'),100,'','+ clients',700);count(document.getElementById('a4'),3.5,'₹','M+',900,true);count(document.getElementById('a5'),250,'','+ clients',1000);achObs.disconnect();}});},{threshold:.4});
   const ab=document.querySelector('.ach-bg');if(ab)achObs.observe(ab);
 
   const skillObs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){document.querySelectorAll('.skill-fill').forEach((b,i)=>{setTimeout(()=>{b.style.transition='width .9s cubic-bezier(.34,1.56,.64,1)';b.style.width=b.dataset.w;},i*80);});skillObs.disconnect();}});},{threshold:.3});
