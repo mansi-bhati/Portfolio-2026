@@ -286,7 +286,7 @@ body{font-family:'Inter',sans-serif;background:#fff;color:var(--ink);overflow-x:
     <div class="eyebrow"><span class="edot"></span>Available for full-time roles</div>
     <h1>Mansi Bhati</h1>
     <div class="engineer-tag">An Engineer Turned Marketer</div>
-    <p class="hero-sub">Performance marketer with a knack for creativity — my job is to find out what works, then make it work harder. 6+ years of turning budgets into results: <strong>250+ clients globally</strong>, <strong>$3.5M+ in ad spend managed</strong>, and <strong>1500+ campaigns delivered</strong> across Google, Meta, LinkedIn & beyond.</p>
+    <p class="hero-sub">Performance marketer with a knack for creativity — my job is to find out what works, then make it work harder. 6+ years of turning budgets into results: <strong>150+ clients globally</strong>, <strong>$3.5M+ in ad spend managed</strong>, and <strong>1500+ campaigns delivered</strong> across Google, Meta, LinkedIn & beyond.</p>
     <div class="hero-pills">
       <span class="hpill">Google Ads</span><span class="hpill">Meta Ads</span><span class="hpill">LinkedIn Ads</span><span class="hpill">GA4 &amp; GTM</span><span class="hpill">B2B SaaS</span>
     </div>
@@ -712,10 +712,10 @@ body{font-family:'Inter',sans-serif;background:#fff;color:var(--ink);overflow-x:
     let s=0,step=target/(dur/16);
     const t=setInterval(()=>{s+=step;if(s>=target){el.textContent=pre+(isF?target.toFixed(1):target)+suf;clearInterval(t);return;}el.textContent=pre+(isF?s.toFixed(1):Math.floor(s))+suf;},16);
   }
-  const metObs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){count(document.getElementById('m1'),6,'','+ yrs',800);count(document.getElementById('m2'),1500,'','+ campaigns',1300);count(document.getElementById('m3'),5,'₹','Cr',1000,true);count(document.getElementById('m4'),180,'','+ MQLs',900);count(document.getElementById('m5'),250,'','+ clients',1100);metObs.disconnect();}});},{threshold:.5});
+  const metObs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){count(document.getElementById('m1'),6,'','+ yrs',800);count(document.getElementById('m2'),1500,'','+ campaigns',1300);count(document.getElementById('m3'),5,'₹','Cr',1000,true);count(document.getElementById('m4'),180,'','+ MQLs',900);count(document.getElementById('m5'),150,'','+ clients',1100);metObs.disconnect();}});},{threshold:.5});
   const mb=document.querySelector('.mbar');if(mb)metObs.observe(mb);
 
-  const achObs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){count(document.getElementById('a1'),180,'','+ MQLs',900);count(document.getElementById('a2'),3,'Rs.','Cr+',800,true);count(document.getElementById('a3'),100,'','+ clients',700);count(document.getElementById('a4'),5,'₹','Cr',900,true);count(document.getElementById('a5'),250,'','+ clients',1000);achObs.disconnect();}});},{threshold:.4});
+  const achObs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){count(document.getElementById('a1'),180,'','+ MQLs',900);count(document.getElementById('a2'),3,'Rs.','Cr+',800,true);count(document.getElementById('a3'),100,'','+ clients',700);count(document.getElementById('a4'),5,'₹','Cr',900,true);count(document.getElementById('a5'),150,'','+ clients',1000);achObs.disconnect();}});},{threshold:.4});
   const ab=document.querySelector('.ach-bg');if(ab)achObs.observe(ab);
 
   const skillObs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){document.querySelectorAll('.skill-fill').forEach((b,i)=>{setTimeout(()=>{b.style.transition='width .9s cubic-bezier(.34,1.56,.64,1)';b.style.width=b.dataset.w;},i*80);});skillObs.disconnect();}});},{threshold:.3});
